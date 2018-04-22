@@ -1,0 +1,257 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="HotelCasaRiva.Web.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- for-mobile-apps -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Favorites Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+		Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //for-mobile-apps -->
+    <link href="Content/Styles/bootstrap.css" rel="stylesheet" />
+    <link href="Content/Styles/daterangepicker.css" rel="stylesheet" />
+    <link href="Content/Styles/style.css" rel="stylesheet" />
+    <link href="Content/Styles/swipebox.css" rel="stylesheet" />
+    <link href="Content/Plugin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="Content/Styles/bootstrap-slider.css" rel="stylesheet" />
+    <script src="Content/Scripts/jquery.min.js"></script>
+    <script src="Content/Scripts/bootstrap.js"></script>
+    <script src="Content/Scripts/move-top.js"></script>
+    <script src="Content/Scripts/easing.js"></script>
+    <script src="Content/Scripts/bootstrap-slider.js"></script>
+    <!-- start-smoth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script src="Content/Scripts/Custom/masterpage.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smoth-scrolling -->
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <!-- header -->
+    <div> <%--class="header"--%>
+        <div class="container">
+            <div>
+                <%--class="top-header"--%>
+                <%--                    <div class="header-left">
+                        <a href="OurHotel.aspx">
+                            <img src="Content/Images/brand_name.png">
+                        </a>
+                    </div>--%>
+                <%--                    <div class="navigation text-center">
+
+                        <ul class="nav1">
+                            <li><a class="active" href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="menu.html">OUR MENU</a></li>
+                            <li><a href="gallery.html">GALLERY</a></li>
+                            <li><a href="typography.html">TODAY'S SPECIAL</a>
+                            <li><a href="contact.html">CONTACT</a></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                --%>
+                <nav class="navbar navbar-inverse navbar-fixed-top background">
+                    <div class="container-fluid background-pattern">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand brand" href="#">
+                                <img src="Content/Images/logo_brand_name.png" />
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav navbar-right emenu">
+                                <div class="contact-detail">
+                                    <span><span class="fa fa-envelope-o"></span>&nbsp;hotelcasariva.surat@gmail.com&nbsp;&nbsp;&nbsp;</span>
+                                    <span><span class="fa fa-phone"></span>&nbsp;+91 261 291 4513</span>
+                                </div>
+                                <%--                        <div>
+                            <span><span class="fa fa-envelope-o"></span>  info@tgbhotels.com</span>
+                            <span><span class="fa fa-phone"></span>+91-79-26937800</span>
+                        </div>--%>
+                                <li id="ourhotel" runat="server" class="active"><a href="OurHotel.aspx">Our Hotel</a></li>
+                                <li id="Rooms" runat="server"><a href="Rooms.aspx">Rooms</a></li>
+                                <%--                                <li class="dropdown">
+                                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Page 1-1</a></li>
+                                        <li><a href="#">Page 1-2</a></li>
+                                        <li><a href="#">Page 1-3</a></li>
+                                    </ul>
+                                </li>--%>
+                                <li id="photos" runat="server"><a href="Photos.aspx">Photos</a></li>
+                                <li id="dining" runat="server"><a href="Dining.aspx">Dining</a></li>
+                                <li id="fitness" runat="server"><a href="#">Fitness</a></li>
+                                <li id="localarea" runat="server"><a href="#">Local Area</a></li>
+                                <li id="location" runat="server"><a href="Map.aspx">Map</a></li>
+                                <%--                                <li><a href="#">Page 7</a></li>
+                                <li><a href="#">Page 8</a></li>
+                                <li><a href="#">Page 9</a></li>
+                                <li><a href="#">Page 10</a></li>--%>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <%--                <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle navbar-fixed-top" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>--%>
+
+
+                <%--                    <div class="header-left">
+                        <p>Place your order and get 20% off on each price</p>
+                    </div>
+                    <div class="login-section">
+                        <ul>
+                            <li><a href="login.html">Login</a>  </li>
+                            |
+						<li><a href="register.html">Register</a> </li>
+                        </ul>
+                    </div>
+                    <!-- start search-->
+                    <div class="search-box">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input" placeholder="Enter your search item..." type="search" name="search" id="search">
+                                <input class="sb-search-submit" type="submit" value="">
+                                <span class="sb-icon-search"></span>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- search-scripts -->
+                    <script src="Content/Scripts/classie.js"></script>
+                    <script src="Content/Scripts/uisearch.js"></script>
+                    <script>
+                        new UISearch(document.getElementById('sb-search'));
+                    </script>
+                    <!-- //search-scripts -->
+                    <div class="header-right">
+                        <div class="cart box_1">
+                            <a href="checkout.html">
+                                <h3><span class="simpleCart_total">$0.00 </span>(<span id="simpleCart_quantity" class="simpleCart_quantity"> 0 </span>items)<img src="images/bag.png" alt=""></h3>
+                            </a>
+                            <p><a href="javascript:;" class="simpleCart_empty">Empty cart</a></p>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>--%>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+    <!-- //header -->
+    <div class="content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <!-- footer-top -->
+    <div class="footer-top">
+        <div class="container">
+            <div class="col-md-3 footer-grid">
+                <h3><a href="#">FAVORITES</a></h3>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h4>BUFFET</h4>
+                <p>MONDAY - THURSDAY<span>7 : 00 - 21 : 00</span></p>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h4>ORDERS</h4>
+                <p>MONDAY - SUNDAY<span>7 : 00 - 21 : 00</span></p>
+            </div>
+            <div class="col-md-3 footer-grid">
+                <h4>ADDRESS</h4>
+                <ul>
+                    <li class="list-one">Besides Mulberry Height Behind Auro University Bhatpor, Surat, Gujarat</li>
+                    <li class="list-two"><a href="mailto:info@example.com">hotelcasariva.surat@gmail.com</a></li>
+                    <li class="list-three">+91 777 888 5885</li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!-- //footer-top -->
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-left">
+                <p>&copy; 2015 Favorites. Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+            </div>
+            <div class="footer-right">
+                <ul>
+                    <li><a href="#" class="twitter"></a></li>
+                    <li><a href="#" class="facebook"></a></li>
+                    <li><a href="#" class="chrome"></a></li>
+                    <li><a href="#" class="pinterest"></a></li>
+                    <li><a href="#" class="linkedin"></a></li>
+                    <li><a href="#" class="dribbble"></a></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!-- //footer -->
+    <!-- smooth scrolling -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+                var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+                };
+            */
+            $().UItoTop({ easingType: 'easeOutQuart' });
+        });
+    </script>
+    <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+    <!-- //smooth scrolling -->
+
+</body>
+</html>
