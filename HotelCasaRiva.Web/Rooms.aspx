@@ -15,12 +15,26 @@
                 <div class="strip-line"></div>
                 <div class="row">
                     <div class="col-lg-4 col-md-4 custom-datepicker">
-                        <input type="text" id="config-demo" class="form-control">
-                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                        <p class="control-label">Date</p>
+                        <div>
+                            <input type="text" id="config-demo" class="form-control">
+                            <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
+                        <p class="control-label">Guests</p>
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="btn-plus"><span class="glyphicon glyphicon-minus"></span></button>
+                            </span>
+                            <input type="text" class="form-control" name="qty" id="qty" value="1">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button" id="btn-minus"><span class="glyphicon glyphicon-plus"></span></button>
+                            </span>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-md-4">
+                        <p class="control-label"></p>
                         <div id="1" class="btn btn-primary btn-roomsearch">View Rates</div>
                     </div>
                 </div>

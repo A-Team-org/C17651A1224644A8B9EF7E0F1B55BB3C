@@ -1965,7 +1965,7 @@ p.click a {
     border-color: #ef553a !important;
 }*/
 
-    /*.btn-primary:hover {
+/*.btn-primary:hover {
         background-color: rgb(6, 217, 149) !important;
         border-color: rgb(6, 217, 149) !important;
     }*/
@@ -3433,7 +3433,6 @@ a.simpleCart_empty {
     .welcome-grid {
         min-height: 211px;
     }
-
 }
 
 @media(max-width:768px) {
@@ -4040,19 +4039,17 @@ a.simpleCart_empty {
     }
 
     .delicious-grids div .title a {
-        font-size: 19px!important;
+        font-size: 19px !important;
     }
 
     .delicious-grid div a {
-        font-size: 15px!important;
+        font-size: 15px !important;
     }
 
     #map {
-        margin-top: 40px!important;
-        height:400px!important;
+        margin-top: 40px !important;
+        height: 400px !important;
     }
-
-
 }
 
 @media(max-width:640px) {
@@ -4797,7 +4794,7 @@ a.simpleCart_empty {
 
     .navbar-brand img {
         width: 105px !important;
-        margin-top: 4%!important;
+        margin-top: 4% !important;
     }
 
     .background-pattern {
@@ -4822,25 +4819,22 @@ a.simpleCart_empty {
     .navbar .nav > li > a:focus {
         color: #fff !important;
         background-color: #C6A266;
-        border-bottom: none!important;
-    }
-    .navbar .nav > .active > a {
-        color: #fff !important;
-        background-color: #C6A266!important;
         border-bottom: none !important;
     }
 
-    .contact-detail{
-        display:none;
+    .navbar .nav > .active > a {
+        color: #fff !important;
+        background-color: #C6A266 !important;
+        border-bottom: none !important;
+    }
+
+    .contact-detail {
+        display: none;
     }
 
     .content {
-        margin-top: 63px!important;
+        margin-top: 63px !important;
     }
-
-
-
-
 }
 
 @media(max-width:320px) {
@@ -5342,15 +5336,13 @@ a.simpleCart_empty {
     #map {
         margin-top: 30px !important;
     }
-
-
 }
 
 /*-- responsive media queries --*/
 
 /*Custom*/
-.hr-line{
-    border-top:1px solid #C6A266;
+.hr-line {
+    border-top: 1px solid #C6A266;
 }
 
 /*Photos.css*/
@@ -5435,44 +5427,44 @@ a.simpleCart_empty {
 .navbar-toggle {
     border: 1px solid #C6A266 !important;
     margin-top: 13px;
-    margin-right:0px;
+    margin-right: 0px;
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
     border-color: #C6A266 !important;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
-    background-color:transparent!important;
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+    background-color: transparent !important;
 }
 
-.nav > li > a:hover, .nav > li > a:focus{
-    border-bottom:2px solid;
+.nav > li > a:hover, .nav > li > a:focus {
+    border-bottom: 2px solid;
 }
 
 /*.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{
     background:transparent;
 }*/
 .navbar .nav > li > a {
-    font-size:17px;
+    font-size: 17px;
     color: #b7b1a8;
     line-height: 10px;
 }
 
-.navbar .nav > li > a:hover {
+    .navbar .nav > li > a:hover {
         color: #fff;
         border-bottom: 2px solid #fff;
     }
 
-.navbar .nav > li > a:focus {
+    .navbar .nav > li > a:focus {
         color: #fff;
         border-bottom: 2px solid #fff;
     }
 
 .navbar .nav > .active > a {
     color: #fff;
-    background-color:transparent;
+    background-color: transparent;
     border-bottom: 2px solid #fff;
 }
 
@@ -5482,17 +5474,17 @@ a.simpleCart_empty {
 
 .contact-detail {
     text-align: right;
-    padding-right:3%;
+    padding-right: 3%;
 }
 
     .contact-detail span {
-        font-size:17px;
+        font-size: 17px;
         color: #b7b1a8;
     }
 
 /*Dining*/
-.dining-image{
-    margin-top:50px;
+.dining-image {
+    margin-top: 50px;
 }
 
     .dining-image img {
@@ -5500,21 +5492,22 @@ a.simpleCart_empty {
         max-height: 100%;
         margin: 0 auto;
     }
+
 .dining-subtitle {
     margin-top: 30px;
-    margin-bottom:30px;
-} 
-
-.dining-subtitle h3 {
-    text-align: center;
-    font-size: 26px;
-    color: #704C1C;
-    font-weight: bold;
+    margin-bottom: 30px;
 }
 
+    .dining-subtitle h3 {
+        text-align: center;
+        font-size: 26px;
+        color: #704C1C;
+        font-weight: bold;
+    }
+
 .dining-block {
-    padding:20px;
-    margin-bottom:20px;
+    padding: 20px;
+    margin-bottom: 20px;
     background: #f9f4ef;
 }
 
@@ -5525,13 +5518,13 @@ a.simpleCart_empty {
     }
 
     .dining-block .info {
-        margin:5px 0 5px 0;
+        margin: 5px 0 5px 0;
         font-size: 14px;
         color: #918c85;
     }
 
     .dining-block .info-botom {
-        margin:3px 0 3px 0;
+        margin: 3px 0 3px 0;
         font-size: 14px;
         color: #918c85;
     }
@@ -5539,22 +5532,22 @@ a.simpleCart_empty {
     .dining-block .title-for {
         font-size: 12px;
         color: #918c85;
-        font-weight:500;
-        margin:2px 0 2px 0;
+        font-weight: 500;
+        margin: 2px 0 2px 0;
     }
 
 /*Map*/
 #map {
     max-width: 100%;
-    height:500px;
+    height: 500px;
     margin: 0 auto;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 /*Rooms*/
-.room-block{
-    margin:50px auto;
-} 
+.room-block {
+    margin: 50px auto;
+}
 
 .room-image {
     position: relative;
@@ -5563,17 +5556,17 @@ a.simpleCart_empty {
     /*background: url(https://www2.ametsoc.org/stac/assets/Image/MOUNTAIN_image/Snow-Covered%20Sierra%20Nevada%20Mountains,%20California.jpg);*/
     background-size: cover;
     overflow: hidden;
-    border-radius:3px 3px 0px 0px;
+    border-radius: 3px 3px 0px 0px;
 }
 
     .room-image img {
         width: 100%;
     }
 
-    <!-- .box:hover .description { -->
-        <!-- margin-bottom: 0; -->
-        <!--
-    }
+<!-- .box:hover .description { -->
+    <!-- margin-bottom: 0; -->
+    <!--
+}
 -->
 
 .room-description {
@@ -5608,7 +5601,7 @@ sub-caption {
     width: 100%;
     background-color: #704C1C !important;
     border-color: #704C1C !important;
-    border-radius:0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
 }
 
     .btn-room:hover {
@@ -5631,9 +5624,9 @@ sub-caption {
 
 
 /*Room-Modal*/
-.room-title{
-    font-size:3.0em;
-    font-weight:600;
+.room-title {
+    font-size: 3.0em;
+    font-weight: 600;
 }
 
 .cross-button {
@@ -5665,18 +5658,18 @@ sub-caption {
 }
 
 
-/*--*/ 
+/*-Room-control-*/
 .custom-datepicker {
     position: relative;
 }
 
-.custom-datepicker i {
-    position: absolute;
-    bottom: 10px;
-    right: 24px;
-    top: auto;
-    cursor: pointer;
-}
+    .custom-datepicker i {
+        position: absolute;
+        bottom: 10px;
+        right: 24px;
+        top: auto;
+        cursor: pointer;
+    }
 
 .range_inputs .btn-success {
     background-color: #704C1C;
@@ -5691,4 +5684,69 @@ sub-caption {
 .daterangepicker td.active, .daterangepicker td.active:hover {
     background-color: #C6A266;
 }
+
+.control-label {
+    height: 20px;
+    color: #a9a9a9;
+}
+
+/*Available Rooms*/
+.availableroom-block {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: #f9f4ef;
+}
+
+    .availableroom-block .title {
+        font-size: 22px;
+        color: #272422;
+        font-weight: 600;
+    }
+
+    .availableroom-block hr {
+        border-top: 1px solid #704C1C;
+    }
+
+.availableroom-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /*background: url(https://www2.ametsoc.org/stac/assets/Image/MOUNTAIN_image/Snow-Covered%20Sierra%20Nevada%20Mountains,%20California.jpg);*/
+    background-size: cover;
+    overflow: hidden;
+    border-radius: 3px 3px 0px 0px;
+}
+
+    .availableroom-image img {
+        width: 100%;
+        height:170px;
+    }
+
+
+.availableroom-block .info-title {
+    margin: 5px 0 5px 0;
+    font-size: 20px;
+    color: #272422;
+}
+
+
+/*    .availableroom-block .info-botom {
+        margin: 3px 0 3px 0;
+        font-size: 14px;
+        color: #918c85;
+    }
+
+    .availableroom-block .title-for {
+        font-size: 12px;
+        color: #918c85;
+        font-weight: 500;
+        margin: 2px 0 2px 0;
+    }*/
+
+/*OurHotel*/
+
+#homeCarousel{
+    margin-top:50px;
+}
+
 

@@ -37,7 +37,7 @@ namespace HotelCasaRiva.Web
                 {
                     ourhotel.Attributes.Add("class", "active");
                 }
-                else if (activePage.Contains("Rooms.aspx"))
+                else if (activePage.Contains("Rooms.aspx") || activePage.Contains("AvailableRooms.aspx"))
                 {
                     Rooms.Attributes.Add("class", "active");
                 }

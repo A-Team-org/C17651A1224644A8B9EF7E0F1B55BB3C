@@ -1,4 +1,5 @@
 ﻿using HotelCasaRiva.Data;
+using HotelCasaRiva.Data.Dtos;
 using HotelCasaRiva.Services.Interfaces;
 using HotelCasaRiva.Services.Models;
 using HotelCasaRiva.Utilities;
@@ -17,6 +18,42 @@ namespace HotelCasaRiva.Services.Repositiories
         {
             _context = context;
         }
+
+        public List<Room> AvailableRoom(int NoOfPerson, DateTime? CheckIndate, DateTime? CheckOutDate)
+        {
+            var ListRoom = new List<Room>();
+            try
+            {
+                      //  select* from ReservationDetails
+                      //  WHERE('2018-05-14' >= ReservationDetails.CheckInDate and '2018-05-14' <= ReservationDetails.CheckOutDate)
+                      //  or('2018-05-16' >= ReservationDetails.CheckInDate AND '2018-05-16' <= ReservationDetails.CheckOutDate)
+                      //  or('2018-05-14' <= ReservationDetails.CheckInDate AND '2018-05-16' >= ReservationDetails.CheckOutDate)
+
+
+                var resarvationRoomList = _context.RoomReservationDetails.
+                    Where(x=>(x.ReservationDetails.CheckInDate<=CheckIndate && x.ReservationDetails.CheckOutDate>=CheckIndate)||
+                    (x.ReservationDetails.CheckInDate <= CheckOutDate && x.ReservationDetails.CheckOutDate >= CheckOutDate)||
+                    (x.ReservationDetails.CheckInDate >= CheckIndate && x.ReservationDetails.CheckOutDate <= CheckOutDate)).
+                    Select(x => x.RoomId);
+
+                ListRoom = _context.Rooms.Where(x =>!resarvationRoomList.Contains(x.RoomId)).ToList();
+                if(Math.Round(Convert.ToDouble(NoOfPerson/2))<=ListRoom.Count)
+                {
+                   
+                    return ListRoom;
+                }
+                else
+                {
+                    return null;
+                }
+               
+            }
+            catch(Exception)
+            {
+                return null;
+            }
+        }
+
 
         public DataTable GetRoomBlockData()
         {

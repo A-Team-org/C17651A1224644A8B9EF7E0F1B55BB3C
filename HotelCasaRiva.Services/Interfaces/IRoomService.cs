@@ -1,4 +1,7 @@
-﻿using System.Data;
+﻿using HotelCasaRiva.Data.Dtos;
+using System;
+using System.Collections.Generic;
+using System.Data;
 
 namespace HotelCasaRiva.Services.Interfaces
 {
@@ -6,5 +9,6 @@ namespace HotelCasaRiva.Services.Interfaces
     {
         DataTable GetRoomBlockData();
         string GetRoomDetails(int roomId);
+        List<Room> AvailableRoom(int NoOfPerson,DateTime? CheckIndate,DateTime? CheckOutDate);
     }
 }

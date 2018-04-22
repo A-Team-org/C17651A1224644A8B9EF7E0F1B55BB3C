@@ -76,9 +76,12 @@
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
     <Compile Include="Dtos\CategoryRoomDescription.cs" />
+    <Compile Include="Dtos\ReservationDetails.cs" />
+    <Compile Include="Dtos\Room.cs" />
     <Compile Include="Dtos\RoomDescription.cs" />
     <Compile Include="Dtos\RoomDescriptionCategory.cs" />
     <Compile Include="Dtos\RoomImage.cs" />
+    <Compile Include="Dtos\RoomReservationDetails.cs" />
     <Compile Include="Dtos\RoomType.cs" />
     <Compile Include="Identity\ApplicationUser.cs" />
     <Compile Include="Identity\IdentityConfig.cs" />

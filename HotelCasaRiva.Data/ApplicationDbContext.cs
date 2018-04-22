@@ -2,6 +2,7 @@
 using HotelCasaRiva.Data.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
+using System.Collections.Generic;
 using System.Data.Entity;
 
 namespace HotelCasaRiva.Data
@@ -18,6 +19,9 @@ namespace HotelCasaRiva.Data
         public DbSet<RoomImage> RoomImages { get; set; }
         public DbSet<RoomDescriptionCategory> RoomDescriptionCategories { get; set; }
         public DbSet<CategoryRoomDescription> CategoryRoomDescriptions { get; set; }
+        public DbSet<Room> Rooms { get; set; }
+        public DbSet<ReservationDetails> ReservationDetails { get; set; }
+        public DbSet<RoomReservationDetails> RoomReservationDetails { get; set; }
 
         public static ApplicationDbContext Create()
         {

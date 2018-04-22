@@ -4,105 +4,48 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <!-- banner -->
     <div class="container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <div id="homeCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-                <li data-target="#myCarousel" data-slide-to="3"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
-                <li data-target="#myCarousel" data-slide-to="5"></li>
-                <li data-target="#myCarousel" data-slide-to="6"></li>
-                <li data-target="#myCarousel" data-slide-to="7"></li>
-                <li data-target="#myCarousel" data-slide-to="8"></li>
-                <li data-target="#myCarousel" data-slide-to="9"></li>
-                <li data-target="#myCarousel" data-slide-to="10"></li>
-                <li data-target="#myCarousel" data-slide-to="11"></li>
-                <li data-target="#myCarousel" data-slide-to="12"></li>
-                <li data-target="#myCarousel" data-slide-to="13"></li>
-                <li data-target="#myCarousel" data-slide-to="14"></li>
-                <li data-target="#myCarousel" data-slide-to="15"></li>
-                <li data-target="#myCarousel" data-slide-to="16"></li>
-                <li data-target="#myCarousel" data-slide-to="17"></li>
-                <li data-target="#myCarousel" data-slide-to="18"></li>
-                <li data-target="#myCarousel" data-slide-to="19"></li>
-                <li data-target="#myCarousel" data-slide-to="20"></li>
-                <li data-target="#myCarousel" data-slide-to="21"></li>
-                <li data-target="#myCarousel" data-slide-to="22"></li>
-                <li data-target="#myCarousel" data-slide-to="23"></li>
+                <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#homeCarousel" data-slide-to="1"></li>
+                <li data-target="#homeCarousel" data-slide-to="2"></li>
+                <li data-target="#homeCarousel" data-slide-to="3"></li>
+                <li data-target="#homeCarousel" data-slide-to="4"></li>
+                <li data-target="#homeCarousel" data-slide-to="5"></li>
+                <li data-target="#homeCarousel" data-slide-to="6"></li>
+                <li data-target="#homeCarousel" data-slide-to="7"></li>
+                <li data-target="#homeCarousel" data-slide-to="8"></li>
             </ol>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="Content/Images/Goggle review images/CasaRiva5.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/01.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
                 <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva2.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/02.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
                 <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva3.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/03.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
                 <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva4.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/04.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
                 <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva1.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/05.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
                 <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva6.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/06.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
                 <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva7.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/07.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
                 <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva8.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/08.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
                 <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva9.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva10.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva12.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva13.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva14.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva15.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva16.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva17.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva18.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva19.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva20.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva21.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva22.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva23.png" alt="CasaRiva" style="width: 100%;">
-                </div>
-                <div class="item">
-                    <img src="Content/Images/Goggle review images/CasaRiva24.png" alt="CasaRiva" style="width: 100%;">
+                    <img src="Content/Images/HomeSlider/09.jpg" alt="CasaRiva" style="width: 100%;">
                 </div>
 
             </div>
