@@ -267,10 +267,45 @@
     <Content Include="Content\Images\menu.png" />
     <Content Include="Content\Images\message.png" />
     <Content Include="Content\Images\patten.png" />
+    <Content Include="Content\Images\PhotosPage\01.jpg" />
+    <Content Include="Content\Images\PhotosPage\02.jpg" />
+    <Content Include="Content\Images\PhotosPage\04.jpg" />
+    <Content Include="Content\Images\PhotosPage\05.jpg" />
+    <Content Include="Content\Images\PhotosPage\06.jpg" />
+    <Content Include="Content\Images\PhotosPage\07.jpg" />
+    <Content Include="Content\Images\PhotosPage\08.jpg" />
+    <Content Include="Content\Images\PhotosPage\09.jpg" />
+    <Content Include="Content\Images\PhotosPage\12.jpg" />
+    <Content Include="Content\Images\PhotosPage\13.jpg" />
+    <Content Include="Content\Images\PhotosPage\14.jpg" />
+    <Content Include="Content\Images\PhotosPage\17.jpg" />
+    <Content Include="Content\Images\PhotosPage\19.jpg" />
+    <Content Include="Content\Images\PhotosPage\20.jpg" />
+    <Content Include="Content\Images\PhotosPage\21.jpg" />
+    <Content Include="Content\Images\PhotosPage\Pool.jpg" />
+    <Content Include="Content\Images\PhotosPage\23.jpg" />
+    <Content Include="Content\Images\PhotosPage\Fitness.jpg" />
+    <Content Include="Content\Images\PhotosPage\26.jpg" />
+    <Content Include="Content\Images\PhotosPage\27.jpg" />
+    <Content Include="Content\Images\PhotosPage\28.jpg" />
+    <Content Include="Content\Images\PhotosPage\29.jpg" />
+    <Content Include="Content\Images\PhotosPage\Dining1.jpeg" />
+    <Content Include="Content\Images\PhotosPage\Dining2.jpeg" />
+    <Content Include="Content\Images\PhotosPage\Dining3.jpeg" />
+    <Content Include="Content\Images\PhotosPage\Dining4.jpg" />
+    <Content Include="Content\Images\PhotosPage\Exterior.jpg" />
+    <Content Include="Content\Images\PhotosPage\Front View.jpg" />
+    <Content Include="Content\Images\PhotosPage\Lobby.jpg" />
+    <Content Include="Content\Images\PhotosPage\Lobby1.jpeg" />
+    <Content Include="Content\Images\PhotosPage\Events.jpeg" />
+    <Content Include="Content\Images\PhotosPage\Dining5.jpeg" />
     <Content Include="Content\Images\pic10.jpg" />
     <Content Include="Content\Images\pic11.jpg" />
     <Content Include="Content\Images\pic12.jpg" />
     <Content Include="Content\Images\pic2.jpg" />
+    <Content Include="Content\Images\room\26.jpg" />
+    <Content Include="Content\Images\room\27.jpg" />
+    <Content Include="Content\Images\room\29.jpg" />
     <Content Include="Content\Images\room\Deluxe King\1.jpg" />
     <Content Include="Content\Images\room\Deluxe Queen\1.jpg" />
     <Content Include="Content\Images\room\Executive King\1.jpg" />
@@ -648,7 +683,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49821</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
