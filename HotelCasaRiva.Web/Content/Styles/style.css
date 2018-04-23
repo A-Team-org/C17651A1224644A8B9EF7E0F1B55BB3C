@@ -1013,6 +1013,7 @@ a.callbacks_nav.callbacks2_nav.next {
         }
 
         .footer-grid ul li.list-three {
+            margin-left:20px;
             background: url(../images/iphone.png) no-repeat 0px 9px;
             padding-left: 36px;
         }
@@ -5496,7 +5497,8 @@ a.simpleCart_empty {
 
     .contact-detail span {
         font-size: 17px;
-        color: #b7b1a8;
+        /*color: #b7b1a8;*/
+        color:#ffffff;
     }
 
 /*Dining*/
@@ -5987,7 +5989,10 @@ body,
     color:#ffffff;
 }
 
-
+.footer-address{
+    margin-top:30px!important;
+    display:inline-flex;
+}
 
 
 
