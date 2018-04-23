@@ -49,6 +49,9 @@
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.8\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -101,9 +104,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -239,7 +239,14 @@
     <Content Include="Content\Images\Goggle review images\CasaRiva9.png" />
     <Content Include="Content\Images\home.png" />
     <Content Include="Content\Images\HomeSlider\01.jpg" />
+    <Content Include="Content\Images\HomeSlider\02.jpg" />
     <Content Include="Content\Images\HomeSlider\03.jpg" />
+    <Content Include="Content\Images\HomeSlider\04.jpg" />
+    <Content Include="Content\Images\HomeSlider\05.jpg" />
+    <Content Include="Content\Images\HomeSlider\06.jpg" />
+    <Content Include="Content\Images\HomeSlider\07.jpg" />
+    <Content Include="Content\Images\HomeSlider\08.jpg" />
+    <Content Include="Content\Images\HomeSlider\09.jpg" />
     <Content Include="Content\Images\icons.svg" />
     <Content Include="Content\Images\iPhone.png" />
     <Content Include="Content\Images\k1.jpg" />
@@ -383,6 +390,7 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Services\RoomService_web.asmx" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
@@ -568,6 +576,10 @@
     <Compile Include="Rooms.aspx.designer.cs">
       <DependentUpon>Rooms.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Services\RoomService_web.asmx.cs">
+      <DependentUpon>RoomService_web.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -600,7 +612,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

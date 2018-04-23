@@ -31,36 +31,36 @@ namespace HotelCasaRiva.Web
                 photos.Attributes.Remove("class");
                 dining.Attributes.Remove("class");
                 fitness.Attributes.Remove("class");
-                localarea.Attributes.Remove("class");
-                location.Attributes.Remove("class");
-                if (activePage.Contains("OurHotel.aspx"))
+                //localarea.Attributes.Remove("class");
+                //location.Attributes.Remove("class");
+                if (activePage.Contains("OurHotel"))
                 {
                     ourhotel.Attributes.Add("class", "active");
                 }
-                else if (activePage.Contains("Rooms.aspx") || activePage.Contains("AvailableRooms.aspx"))
+                else if (activePage.Contains("Rooms") || activePage.Contains("AvailableRooms.aspx"))
                 {
                     Rooms.Attributes.Add("class", "active");
                 }
-                else if (activePage.Contains("Photos.aspx"))
+                else if (activePage.Contains("Photos"))
                 {
                     photos.Attributes.Add("class", "active");
                 }
-                else if (activePage.Contains("Dining.aspx"))
+                else if (activePage.Contains("Dining"))
                 {
                     dining.Attributes.Add("class", "active");
                 }
-                else if (activePage.Contains("Fitness.aspx"))
+                else if (activePage.Contains("Fitness"))
                 {
                     fitness.Attributes.Add("class", "active");
                 }
-                else if (activePage.Contains("Local_Area.aspx"))
-                {
-                    localarea.Attributes.Add("class", "active");
-                }
-                else if (activePage.Contains("Map.aspx"))
-                {
-                    location.Attributes.Add("class", "active");
-                }
+                //else if (activePage.Contains("Local_Area"))
+                //{
+                //    localarea.Attributes.Add("class", "active");
+                //}
+                //else if (activePage.Contains("Map"))
+                //{
+                //    location.Attributes.Add("class", "active");
+                //}
             }
             catch (Exception)
             {

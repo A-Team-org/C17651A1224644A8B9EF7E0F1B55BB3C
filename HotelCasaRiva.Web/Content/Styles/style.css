@@ -949,8 +949,8 @@ a.callbacks_nav.callbacks2_nav.next {
 /*-- //delicious --*/
 /*-- footer-top --*/
 .footer-top {
-    background: #6a737b;
-    padding: 80px 0;
+    background: #563500;
+    padding: 10px 0;
 }
 
 .footer-grid h3 {
@@ -959,10 +959,19 @@ a.callbacks_nav.callbacks2_nav.next {
 }
 
     .footer-grid h3 a {
-        color: #f65a5b;
+        color: #ff9900;
         font-size: 45px;
         text-decoration: none;
+        font-weight:600;
     }
+
+    .footer-grid h3 a span {
+        color: #ff9900;
+        font-size: 45px;
+        text-decoration: none;
+        font-weight: 300;
+    }
+
 
 .footer-grid h4 {
     text-align: center;
@@ -1021,7 +1030,7 @@ a.callbacks_nav.callbacks2_nav.next {
 /*-- //footer-top --*/
 /*-- footer --*/
 .footer {
-    background: #f65a5b;
+    background: #ff9900;
     padding: 10px 0;
 }
 
@@ -1031,8 +1040,10 @@ a.callbacks_nav.callbacks2_nav.next {
 }
 
 .footer-right {
-    float: right;
+    /*float: right;*/
     width: 24%;
+    display:table-cell;
+    text-align:center;
 }
 
 .footer-left p {
@@ -4015,7 +4026,7 @@ a.simpleCart_empty {
 
     .navbar .nav > li > a:hover {
         color: #fff !important;
-        background-color: #C6A266;
+        background-color: #ff9900;
         border-bottom: none !important;
     }
     /*.nav > li > a {
@@ -4024,13 +4035,13 @@ a.simpleCart_empty {
 
     .navbar .nav > li > a:focus {
         color: #fff !important;
-        background-color: #C6A266;
+        background-color: #ff9900;
         border-bottom: none !important;
     }
 
     .navbar .nav > .active > a {
-        color: #fff !important;
-        background-color: #C6A266 !important;
+        color: #ffffff !important;
+        background-color: #ff9900 !important;
         border-bottom: none !important;
     }
 
@@ -4809,7 +4820,7 @@ a.simpleCart_empty {
 
     .navbar .nav > li > a:hover {
         color: #fff !important;
-        background-color: #C6A266;
+        background-color: #ff9900;
         border-bottom: none !important;
     }
     /*.nav > li > a {
@@ -4818,13 +4829,13 @@ a.simpleCart_empty {
 
     .navbar .nav > li > a:focus {
         color: #fff !important;
-        background-color: #C6A266;
+        background-color: #ff9900;
         border-bottom: none !important;
     }
 
     .navbar .nav > .active > a {
         color: #fff !important;
-        background-color: #C6A266 !important;
+        background-color: #ff9900 !important;
         border-bottom: none !important;
     }
 
@@ -5389,15 +5400,15 @@ a.simpleCart_empty {
 
 
 .navbar-inverse {
-    background: #704C1C !important;
+    background: #563500 !important;
     border-color: #C6A266 !important;
 }
 
-.background-pattern {
+/*.background-pattern {
     background: url(../Images/patten.png) repeat-x;
     background-position: top;
     min-height: 100px;
-}
+}*/
 
 .navbar-header {
     height: 100px;
@@ -5447,25 +5458,31 @@ a.simpleCart_empty {
     background:transparent;
 }*/
 .navbar .nav > li > a {
-    font-size: 17px;
-    color: #b7b1a8;
+    font-size: 20px;
+    /*color: #b7b1a8;*/
+    color:#ffffff;
     line-height: 10px;
+    text-transform: uppercase;
+    font-weight:600;
 }
 
     .navbar .nav > li > a:hover {
-        color: #fff;
-        border-bottom: 2px solid #fff;
+        /*color: #fff;*/
+        color: #ff9900;
+        border-bottom: 2px solid #ff9900;
     }
 
     .navbar .nav > li > a:focus {
-        color: #fff;
-        border-bottom: 2px solid #fff;
+        /*color: #fff;*/
+        color: #ff9900;
+        border-bottom: 2px solid #ff9900;
     }
 
 .navbar .nav > .active > a {
-    color: #fff;
+    /*color: #fff;*/
+    color: #ff9900;
     background-color: transparent;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #ff9900;
 }
 
     .navbar .nav > .active > a:hover, .navbar .nav > .active > a:focus {
@@ -5561,6 +5578,7 @@ a.simpleCart_empty {
 
     .room-image img {
         width: 100%;
+        height:240px;
     }
 
 <!-- .box:hover .description { -->
@@ -5748,5 +5766,229 @@ sub-caption {
 #homeCarousel{
     margin-top:50px;
 }
+
+/*@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(1, 1);
+    }
+
+    to {
+        -webkit-transform: scale(1.5, 1.5);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(1, 1);
+    }
+
+    to {
+        transform: scale(1.5, 1.5);
+    }
+}
+
+.carousel-inner .item > img {
+    -webkit-animation: zoom 20s!important;
+    animation: zoom 20s;
+}*/
+
+/*.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+    overflow: hidden;
+}
+
+.item.active img {
+    transition: transform 5000ms linear 0s;
+    /* This should be based on your carousel setting. For bs, it should be 5second
+    transform: scale(1.20, 1.20);
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+.carousel-indicators li {
+    visibility: hidden;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+        .carousel-fade .carousel-inner > .item.next.left,
+        .carousel-fade .carousel-inner > .item.prev.right,
+        .carousel-fade .carousel-inner > .item.active {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }*/
+
+.carousel-fade .carousel-inner .item {
+    opacity: 0;
+    transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+
+    .carousel-fade .carousel-inner .active.left,
+    .carousel-fade .carousel-inner .active.right {
+        left: 0;
+        opacity: 0;
+        z-index: 1;
+    }
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+        .carousel-fade .carousel-inner > .item.next.left,
+        .carousel-fade .carousel-inner > .item.prev.right,
+        .carousel-fade .carousel-inner > .item.active {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+}
+
+/*/* just for demo purpose 
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+    height: 100%;
+}
+
+.item:nth-child(1) {
+    background-image: url("http://uniq3.net/fileadmin/user_upload/1042/DSC_4592_steinbock_01.jpg");
+}
+
+.item:nth-child(2) {
+    background-image: url("http://www.johannespoll.de/slides/johannes_poll.jpg");
+}
+
+.item:nth-child(3) {
+    background-image: url("http://neu.verwirklicht.com/fileadmin/user_upload/1051/this-is-my-life_johannes-poll.jpg");
+}
+
+
+*/
+
+
+.moving {
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    clear: both;
+    background-position: center center;
+    background-size: cover;
+    -webkit-animation: moving 6s infinite; /* Chrome, Safari, Opera */
+    -webkit-animation-direction: alternate; /* Chrome, Safari, Opera */
+    animation: moving 6s infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes moving {
+    from {
+        -webkit-transform: scale(1.2) skew(1deg) translate(0px);
+    }
+
+    to {
+        -webkit-transform: scale(1.3) skew(0deg) translate(0px);
+    }
+}
+
+@-moz-keyframes moving {
+    from {
+        -moz-transform: scale(1.2) skew(1deg) translate(0px);
+    }
+
+    to {
+        -moz-transform: scale(1.3) skew(0deg) translate(0px);
+    }
+}
+
+@-o-keyframes moving {
+    from {
+        -o-transform: scale(1.2) skew(1deg) translate(0px);
+    }
+
+    to {
+        -o-transform: scale(1.3) skew(0deg) translate(0px);
+    }
+}
+
+.carousel-indicators li {
+    visibility: hidden;
+}
+
+.footer-top ul li{
+    color:#ffffff;
+}
+
+
+
+
 
 

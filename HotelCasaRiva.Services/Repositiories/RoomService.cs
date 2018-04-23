@@ -80,12 +80,22 @@ namespace HotelCasaRiva.Services.Repositiories
             try
             {
                 var listRoomDetail = new List<RoomDetail>();
-                listRoomDetail = (from rt in _context.RoomTypes.AsNoTracking()
-                                  join rd in _context.RoomDescriptions on rt.RoomTypeId equals rd.RoomTypeId
-                                  join crd in _context.CategoryRoomDescriptions on rd.RoomDescriptionId equals crd.RoomDescriptionId
-                                  join rc in _context.RoomDescriptionCategories on crd.RoomDescriptionCategoryId equals rc.RoomDescriptionCategoryId
-                                  where rt.RoomTypeId == roomId
-                                  select new RoomDetail { RoomType = rt.Type, RoomDescCategory = rc.Category, RoomDescTitle = rd.Title, RoomDesc = string.IsNullOrEmpty(rd.Description) == false ? rd.Description.Split(new string[] { "&#32;" }, StringSplitOptions.None).ToList() : null }).ToList();
+                var list = _context.RoomTypes.AsNoTracking().ToList();
+                //listRoomDetail = (from rt in _context.RoomTypes.AsNoTracking()
+                //                  join rd in _context.RoomDescriptions on rt.RoomTypeId equals rd.RoomTypeId
+                //                  join crd in _context.CategoryRoomDescriptions on rd.RoomDescriptionId equals crd.RoomDescriptionId
+                //                  join rc in _context.RoomDescriptionCategories on crd.RoomDescriptionCategoryId equals rc.RoomDescriptionCategoryId
+                //                  where rt.RoomTypeId == roomId
+                //                  select new RoomDetail
+                //                  {
+                //                      RoomType = rt.Type,
+                //                      RoomDescCategory = rc.Category,
+                //                      RoomDescTitle = rd.Title,
+                //                      RoomDesc = !string.IsNullOrEmpty(rd.Description) ? new List<string>()
+                //                      {
+                //                          rd.Description
+                //                      } : null
+                //                  }).ToList();// .Split(new string[] { "&#32;" }, StringSplitOptions.None).ToList() : null 
 
                 var groupByListRoomDetail = listRoomDetail.GroupBy(x => x.RoomDescCategory).ToList();
                 roomDetails = JsonConvert.SerializeObject(groupByListRoomDetail);
@@ -113,7 +123,7 @@ namespace HotelCasaRiva.Services.Repositiories
                 //roomDetails = JsonConvert.SerializeObject(listRoomDetailInGroupByTitle);
                 return roomDetails;
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 return roomDetails;
             }

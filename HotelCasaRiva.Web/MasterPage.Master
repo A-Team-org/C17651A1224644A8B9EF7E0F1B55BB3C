@@ -43,7 +43,8 @@
 </head>
 <body>
     <!-- header -->
-    <div> <%--class="header"--%>
+    <div>
+        <%--class="header"--%>
         <div class="container">
             <div>
                 <%--class="top-header"--%>
@@ -74,7 +75,7 @@
                                 <span class="icon-bar"></span>
                             </button>
                             <a class="navbar-brand brand" href="#">
-                                <img src="Content/Images/logo_brand_name.png" />
+                                <img src="Content/Images/logo_brand_name_N.png" />
                             </a>
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
@@ -100,8 +101,8 @@
                                 <li id="photos" runat="server"><a href="Photos.aspx">Photos</a></li>
                                 <li id="dining" runat="server"><a href="Dining.aspx">Dining</a></li>
                                 <li id="fitness" runat="server"><a href="#">Fitness</a></li>
-                                <li id="localarea" runat="server"><a href="#">Local Area</a></li>
-                                <li id="location" runat="server"><a href="Map.aspx">Map</a></li>
+<%--                                <li id="localarea" runat="server"><a href="#">Local Area</a></li>--%>
+                                <%--                                <li id="location" runat="server"><a href="Map.aspx">Map</a></li>--%>
                                 <%--                                <li><a href="#">Page 7</a></li>
                                 <li><a href="#">Page 8</a></li>
                                 <li><a href="#">Page 9</a></li>
@@ -191,25 +192,33 @@
     </div>
     <!-- footer-top -->
     <div class="footer-top">
-        <div class="container">
-            <div class="col-md-3 footer-grid">
-                <h3><a href="#">FAVORITES</a></h3>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h4>BUFFET</h4>
-                <p>MONDAY - THURSDAY<span>7 : 00 - 21 : 00</span></p>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h4>ORDERS</h4>
-                <p>MONDAY - SUNDAY<span>7 : 00 - 21 : 00</span></p>
-            </div>
-            <div class="col-md-3 footer-grid">
-                <h4>ADDRESS</h4>
-                <ul>
-                    <li class="list-one">Besides Mulberry Height Behind Auro University Bhatpor, Surat, Gujarat</li>
-                    <li class="list-two"><a href="mailto:info@example.com">hotelcasariva.surat@gmail.com</a></li>
-                    <li class="list-three">+91 777 888 5885</li>
-                </ul>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 footer-grid">
+                    <h3><a href="#">Aminitties<span>&nbsp;Offered</span></a></h3>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <ul>
+                        <li>Luxurious oppointed 54 rooms housing Superior, Deluxe, Standard rooms and a Suite, tucked into a small village called Bhatpore</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <ul>
+                        <li>Salt Water - Open Garden restaurant with fanciful gazebos for a special dining experience.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <ul>
+                        <li>Luxurious oppointed 54 rooms housing Superior, Deluxe, Standard rooms and a Suite, tucked into a small village called Bhatpore</li>
+                    </ul>
+                </div>
+                <div class="col-lg-12 col-md-12 col-sm-12 footer-grid">
+                    <ul>
+                        <li class="list-one">Besides Mulberry Height Behind Auro University Bhatpor, Surat, Gujarat</li>
+<%--                        <li class="list-two"><a href="mailto:info@example.com">hotelcasariva.surat@gmail.com</a></li>--%>
+                        <li class="list-three">+91 777 888 5885</li>
+                    </ul>
+                </div>
             </div>
             <div class="clearfix"></div>
         </div>
@@ -218,17 +227,15 @@
     <!-- footer -->
     <div class="footer">
         <div class="container">
-            <div class="footer-left">
+<%--            <div class="footer-left">
                 <p>&copy; 2015 Favorites. Design by <a href="http://w3layouts.com/">W3layouts</a></p>
-            </div>
+            </div>--%>
             <div class="footer-right">
-                <ul>
+                <ul class="display:table-">
                     <li><a href="#" class="twitter"></a></li>
-                    <li><a href="#" class="facebook"></a></li>
-                    <li><a href="#" class="chrome"></a></li>
-                    <li><a href="#" class="pinterest"></a></li>
+                    <li><a href="https://www.facebook.com/Hotel-Casa-Riva-1741709615903588/" class="facebook"></a></li>
+                    <li><a href="https://www.google.co.in/maps/uv?hl=en&pb=!1s0x3be04d16b54428e7:0x8c0f7f983ee3af7c!2m22!2m2!1i80!2i80!3m1!2i20!16m16!1b1!2m2!1m1!1e1!2m2!1m1!1e3!2m2!1m1!1e5!2m2!1m1!1e4!2m2!1m1!1e6!3m1!7e115!4shttps://lh5.googleusercontent.com/p/AF1QipNtV_qJ3ZifYFxPlFgAA1AFzinm492CK_qlyYlD%3Dw389-h200-k-no!5shotelcasarivasurat+-+Google+Search&imagekey=!1e10!2sAF1QipNtV_qJ3ZifYFxPlFgAA1AFzinm492CK_qlyYlD&sa=X&ved=0ahUKEwjo_6KIlc7aAhUX4o8KHXpXDKYQoioIazAO" class="chrome"></a></li>
                     <li><a href="#" class="linkedin"></a></li>
-                    <li><a href="#" class="dribbble"></a></li>
                 </ul>
             </div>
             <div class="clearfix"></div>
