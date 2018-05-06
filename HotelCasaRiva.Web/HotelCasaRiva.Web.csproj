@@ -282,6 +282,7 @@
     <Content Include="Content\Images\PhotosPage\19.jpg" />
     <Content Include="Content\Images\PhotosPage\20.jpg" />
     <Content Include="Content\Images\PhotosPage\21.jpg" />
+    <Content Include="Content\Images\PhotosPage\Dining6.jpg" />
     <Content Include="Content\Images\PhotosPage\Pool.jpg" />
     <Content Include="Content\Images\PhotosPage\23.jpg" />
     <Content Include="Content\Images\PhotosPage\Fitness.jpg" />
@@ -392,6 +393,7 @@
     <Content Include="Content\Plugin\font-awesome-4.7.0\scss\_stacked.scss" />
     <Content Include="Content\Plugin\font-awesome-4.7.0\scss\_variables.scss" />
     <Content Include="AvailableRooms.aspx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Map.aspx" />
     <Content Include="OurHotel.aspx" />

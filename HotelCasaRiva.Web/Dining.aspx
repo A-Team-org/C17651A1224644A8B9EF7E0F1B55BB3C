@@ -9,7 +9,7 @@
                 <div class="strip-line"></div>
             </div>
             <div class="dining-image">
-                <img src="Content/Images/dining/dining_main.jpg">
+                <img src="Content/Images/PhotosPage/Dining6.jpg">
             </div>
             <div class="dining-subtitle">
                 <h3>At this Hotel</h3>
