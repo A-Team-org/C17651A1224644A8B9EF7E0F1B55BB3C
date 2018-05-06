@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Services;
 using Newtonsoft.Json;
+using System.Web.Script.Services;
 
 namespace HotelCasaRiva.Web.Services
 {
@@ -16,6 +17,7 @@ namespace HotelCasaRiva.Web.Services
     [WebService(Namespace = "http://tempuri.org/")]
     [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
     [System.ComponentModel.ToolboxItem(false)]
+    [ScriptService]
     // To allow this Web Service to be called from script, using ASP.NET AJAX, uncomment the following line. 
     // [System.Web.Script.Services.ScriptService]
     public class RoomService_web : System.Web.Services.WebService

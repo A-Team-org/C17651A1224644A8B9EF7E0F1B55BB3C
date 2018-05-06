@@ -70,8 +70,8 @@
                 <div class="modal-body" id="modalBody">
                     <div class="row">
                         <div class="col-md-10 col-sm-10 col-xs-10">
-                            <div class="room-title" id="roomTitle">Test</div>
-                            <div class="room-subTitle" id="roomSubTitle">Test</div>
+                            <div class="room-title" id="roomTitle"></div>
+                            <div class="room-subTitle" id="roomSubTitle"></div>
                         </div>
                         <div class="col-md-2 col-sm-2 col-xs-2">
                             <button type="button" class="close cross-button" data-dismiss="modal">&times;</button>
@@ -79,28 +79,28 @@
                     </div>
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <img src="Content/Images/room/Deluxe%20King/1.jpg" width="100%" />
+                            <img src="Content/Images/room/Deluxe%20King/1.jpg" width="100%" id="roomImage"/>
                         </div>
                     </div>
                     <hr class="hr-line" />
                     <div id="roomFeatures">
                         <div class="row">
                             <div class="col-md-12 col-sm-12 col-xs-12">
-                                <div class="feature-category" id="featureCategory">Test</div>
+                                <div class="feature-category" id="featureCategory"></div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4 col-sm-4 col-xs-4">
-                                <div class="feature-title">Test</div>
-                                <div class="feature-description">Test</div>
+                                <div class="feature-title"></div>
+                                <div class="feature-description"></div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-4">
-                                <div class="feature-title">Test</div>
-                                <div class="feature-description">Test</div>
+                                <div class="feature-title"></div>
+                                <div class="feature-description"></div>
                             </div>
                             <div class="col-md-4 col-sm-4 col-xs-4">
-                                <div class="feature-title">Test</div>
-                                <div class="feature-description">Test</div>
+                                <div class="feature-title"></div>
+                                <div class="feature-description"></div>
                             </div>
                         </div>
                     </div>

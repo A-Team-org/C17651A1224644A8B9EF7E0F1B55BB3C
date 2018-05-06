@@ -17,8 +17,6 @@ namespace HotelCasaRiva.Web
         {
             roomBLock.DataSource = _service.GetRoomBlockData();
             roomBLock.DataBind();
-            //string test = _service.GetRoomDetails(1);
-
         }
     }
 }

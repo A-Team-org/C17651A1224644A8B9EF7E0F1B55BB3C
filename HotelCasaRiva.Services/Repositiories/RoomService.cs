@@ -80,23 +80,21 @@ namespace HotelCasaRiva.Services.Repositiories
             try
             {
                 var listRoomDetail = new List<RoomDetail>();
-                var list = _context.RoomTypes.AsNoTracking().ToList();
-                //listRoomDetail = (from rt in _context.RoomTypes.AsNoTracking()
-                //                  join rd in _context.RoomDescriptions on rt.RoomTypeId equals rd.RoomTypeId
-                //                  join crd in _context.CategoryRoomDescriptions on rd.RoomDescriptionId equals crd.RoomDescriptionId
-                //                  join rc in _context.RoomDescriptionCategories on crd.RoomDescriptionCategoryId equals rc.RoomDescriptionCategoryId
-                //                  where rt.RoomTypeId == roomId
-                //                  select new RoomDetail
-                //                  {
-                //                      RoomType = rt.Type,
-                //                      RoomDescCategory = rc.Category,
-                //                      RoomDescTitle = rd.Title,
-                //                      RoomDesc = !string.IsNullOrEmpty(rd.Description) ? new List<string>()
-                //                      {
-                //                          rd.Description
-                //                      } : null
-                //                  }).ToList();// .Split(new string[] { "&#32;" }, StringSplitOptions.None).ToList() : null 
-
+                listRoomDetail = (from rt in _context.RoomTypes.AsNoTracking()
+                                  join ri in _context.RoomImages on rt.RoomTypeId equals ri.RoomTypeId
+                                  join rd in _context.RoomDescriptions on rt.RoomTypeId equals rd.RoomTypeId
+                                  join crd in _context.CategoryRoomDescriptions on rd.RoomDescriptionId equals crd.RoomDescriptionId
+                                  join rc in _context.RoomDescriptionCategories on crd.RoomDescriptionCategoryId equals rc.RoomDescriptionCategoryId
+                                  where rt.RoomTypeId == roomId
+                                  select new RoomDetail
+                                  {
+                                      RoomType = rt.Type,
+                                      RoomTitle=rt.Title,
+                                      RoomImage=ri.ImagePath,
+                                      RoomDescCategory = rc.Category,
+                                      RoomDescTitle = rd.Title,
+                                      RoomDesc = rd.Description
+                                  }).ToList().GroupBy(x=>x.RoomDescTitle).Select(x=>x.FirstOrDefault()).ToList();
                 var groupByListRoomDetail = listRoomDetail.GroupBy(x => x.RoomDescCategory).ToList();
                 roomDetails = JsonConvert.SerializeObject(groupByListRoomDetail);
 

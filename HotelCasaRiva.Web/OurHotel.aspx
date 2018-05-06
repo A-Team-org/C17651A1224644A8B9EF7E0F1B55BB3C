@@ -1,8 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="OurHotel.aspx.cs" Inherits="HotelCasaRiva.Web.OurHotel" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-        <script src="https://maps.googleapis.com/maps/api/js?key=<%=ConfigurationSettings.AppSettings["googleAPIKey"]%>"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%=ConfigurationSettings.AppSettings["googleAPIKey"]%>"></script>
     <script src="Content/Scripts/Custom/Map.js"></script>
+    <script src="Content/Scripts/Custom/Room.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- banner -->
@@ -160,5 +161,53 @@
     <div id="map">
         <%--                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d66818.66823625914!2d72.72165848109589!3d21.170628654550082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04d16b54428e7%3A0x8c0f7f983ee3af7c!2sHOTEL+CASA+RIVA!5e0!3m2!1sen!2sin!4v1513658428496" height="100%" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>--%>
     </div>
+
+
+    <div class="modal fade" id="roomModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body" id="modalBody">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-10 col-xs-10">
+                            <div class="room-title" id="roomTitle"></div>
+                            <div class="room-subTitle" id="roomSubTitle"></div>
+                        </div>
+                        <div class="col-md-2 col-sm-2 col-xs-2">
+                            <button type="button" class="close cross-button" data-dismiss="modal">&times;</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <img src="Content/Images/room/Deluxe%20King/1.jpg" width="100%" id="roomImage" />
+                        </div>
+                    </div>
+                    <hr class="hr-line" />
+                    <div id="roomFeatures">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="feature-category" id="featureCategory"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="feature-title"></div>
+                                <div class="feature-description"></div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="feature-title"></div>
+                                <div class="feature-description"></div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">
+                                <div class="feature-title"></div>
+                                <div class="feature-description"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
 
 </asp:Content>

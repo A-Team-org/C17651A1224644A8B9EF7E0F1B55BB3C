@@ -80,6 +80,10 @@
                         </div>
                         <div class="collapse navbar-collapse" id="myNavbar">
                             <ul class="nav navbar-nav navbar-right emenu">
+                                <div class="login-block">
+                                    <span class="btn btn-link">Sign In</span>
+                                    <span class="btn btn-link">Sign Up</span>
+                                </div>
                                 <div class="contact-detail">
                                     <span><span class="fa fa-envelope-o"></span>&nbsp;hotelcasariva.surat@gmail.com&nbsp;&nbsp;&nbsp;</span>
                                     <span><span class="fa fa-phone"></span>&nbsp;+91 261 291 4513</span>
@@ -101,7 +105,7 @@
                                 <li id="photos" runat="server"><a href="Photos.aspx">Photos</a></li>
                                 <li id="dining" runat="server"><a href="Dining.aspx">Dining</a></li>
                                 <li id="fitness" runat="server"><a href="#">Fitness</a></li>
-<%--                                <li id="localarea" runat="server"><a href="#">Local Area</a></li>--%>
+                                <%--                                <li id="localarea" runat="server"><a href="#">Local Area</a></li>--%>
                                 <%--                                <li id="location" runat="server"><a href="Map.aspx">Map</a></li>--%>
                                 <%--                                <li><a href="#">Page 7</a></li>
                                 <li><a href="#">Page 8</a></li>
@@ -245,7 +249,7 @@
                         
                         footer-addressfooter-address">
                         <li class="list-one">Besides Mulberry Height Behind Auro University Bhatpor, Surat, Gujarat</li>
-<%--                        <li class="list-two"><a href="mailto:info@example.com">hotelcasariva.surat@gmail.com</a></li>--%>
+                        <%--                        <li class="list-two"><a href="mailto:info@example.com">hotelcasariva.surat@gmail.com</a></li>--%>
                         <li class="list-three">+91 777 888 5885</li>
                     </ul>
                 </div>
@@ -257,7 +261,7 @@
     <!-- footer -->
     <div class="footer">
         <div class="container">
-<%--            <div class="footer-left">
+            <%--            <div class="footer-left">
                 <p>&copy; 2015 Favorites. Design by <a href="http://w3layouts.com/">W3layouts</a></p>
             </div>--%>
             <div class="footer-right">
@@ -269,6 +273,90 @@
                 </ul>
             </div>
             <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="loginModal" role="dialog">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="panel panel-login">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <a href="#" class="active" id="login-form-link">Login</a>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <a href="#" id="register-form-link">Register</a>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
+                                                <div class="form-group">
+                                                    <asp:TextBox runat="server" ID="Email" CssClass="form-control" TabIndex="1" TextMode="Email" placeholder="Username" />
+                                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
+                                                        CssClass="text-danger" ErrorMessage="The email field is required." />
+                                                </div>
+                                                <div class="form-group">
+                                                    <asp:TextBox runat="server" ID="Password" TextMode="Password" tabindex="2" CssClass="form-control" placeholder="Password" />
+                                                    <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
+                                                </div>
+                                                <div class="form-group text-center">
+                                                    <input type="checkbox" tabindex="3" class="" name="remember" id="remember">
+                                                    <label for="remember">Remember Me</label>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 col-sm-offset-3">
+                                                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-lg-12">
+                                                            <div class="text-center">
+                                                                <a href="https://phpoll.com/recover" tabindex="5" class="forgot-password">Forgot Password?</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <form id="register-form" action="https://phpoll.com/register/process" method="post" role="form" style="display: none;">
+                                                <div class="form-group">
+                                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <div class="col-sm-6 col-sm-offset-3">
+                                                            <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

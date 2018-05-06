@@ -17,13 +17,5 @@ namespace HotelCasaRiva.Web
             roomBLock.DataSource = _service.GetRoomBlockData();
             roomBLock.DataBind();
         }
-
-        [System.Web.Services.WebMethod]
-        public string RoomDetails(string roomID)
-        {
-            var roomDetails = string.Empty;
-            roomDetails = _service.GetRoomDetails(Convert.ToInt32(roomID));
-            return roomDetails;
-        }
     }
 }
