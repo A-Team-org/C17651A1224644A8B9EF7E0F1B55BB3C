@@ -97,6 +97,14 @@
     <Compile Include="Migrations\201804081246027_AddDtos.Designer.cs">
       <DependentUpon>201804081246027_AddDtos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201805060535238_UpdateReservation.cs" />
+    <Compile Include="Migrations\201805060535238_UpdateReservation.Designer.cs">
+      <DependentUpon>201805060535238_UpdateReservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201805060540060_ContactNoRemoved.cs" />
+    <Compile Include="Migrations\201805060540060_ContactNoRemoved.Designer.cs">
+      <DependentUpon>201805060540060_ContactNoRemoved.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -113,6 +121,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201804081246027_AddDtos.resx">
       <DependentUpon>201804081246027_AddDtos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805060535238_UpdateReservation.resx">
+      <DependentUpon>201805060535238_UpdateReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201805060540060_ContactNoRemoved.resx">
+      <DependentUpon>201805060540060_ContactNoRemoved.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace HotelCasaRiva.Data.Identity
@@ -14,6 +10,7 @@ namespace HotelCasaRiva.Data.Identity
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
+        public string Address { get; set; }
 
         public ClaimsIdentity GenerateUserIdentity(ApplicationUserManager manager)
         {

@@ -1,8 +1,6 @@
 ﻿using HotelCasaRiva.Data.Dtos;
 using HotelCasaRiva.Data.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 
 namespace HotelCasaRiva.Data

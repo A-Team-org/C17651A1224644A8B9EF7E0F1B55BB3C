@@ -31,34 +31,34 @@ namespace HotelCasaRiva.Utilities
         {
             try
             {
-                var mailMessage = new MailMessage
-                {
-                    From = new MailAddress(_sendFromEmail, _sendFromDisplayName)
-                };
-                mailMessage.To.Add(toEmail);
-                if (!string.IsNullOrEmpty(ccEmail)) mailMessage.CC.Add(ccEmail);
-                if (!string.IsNullOrEmpty(bccEmail)) mailMessage.Bcc.Add(bccEmail);
-                mailMessage.Subject = subject;
-                mailMessage.Body = body;
-                mailMessage.IsBodyHtml = true;
+                var mail = new MailMessage();
+                mail.To.Add(new MailAddress(toEmail, "Jigar Khanpara"));
+                if (!string.IsNullOrEmpty(ccEmail))
+                    mail.CC.Add(ccEmail);
 
-                // Create the credentials to login to the gmail account associated with my custom domain
-                var cred = new NetworkCredential(_sendFromEmail, _password);
+                if (!string.IsNullOrEmpty(bccEmail))
+                    mail.Bcc.Add(bccEmail);
 
-                var mailClient = new SmtpClient(_host, _oPortNo)
+                mail.From = new MailAddress(_sendFromEmail, _sendFromDisplayName);
+                mail.IsBodyHtml = true;
+
+                var client = new SmtpClient
                 {
-                    EnableSsl = true,
+                    Port = _oPortNo,
                     DeliveryMethod = SmtpDeliveryMethod.Network,
                     UseDefaultCredentials = false,
-                    Timeout = 20000,
-                    Credentials = cred
+                    Host = _host,
+                    EnableSsl = true,
+                    Credentials = new NetworkCredential(_sendFromEmail, _password)
                 };
-                mailClient.Send(mailMessage);
+
+                mail.Subject = subject;
+                mail.Body = body;
+                client.Send(mail);
                 return true;
             }
-            catch (System.Exception ex)
+            catch (Exception ex)
             {
-                //TODO Error log
                 return false;
             }
         }
