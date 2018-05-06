@@ -275,7 +275,10 @@
             <div class="clearfix"></div>
         </div>
     </div>
-
+    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+    <asp:UpdatePanel ID="UpdatePanel1"
+        UpdateMode="Conditional"
+        runat="server">
     <div class="modal fade" id="loginModal" role="dialog">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -299,12 +302,12 @@
                                         <div class="col-lg-12">
                                             <form id="login-form" action="https://phpoll.com/login/process" method="post" role="form" style="display: block;">
                                                 <div class="form-group">
-                                                    <asp:TextBox runat="server" ID="Email" CssClass="form-control" TabIndex="1" TextMode="Email" placeholder="Username" />
+                                                    <asp:TextBox runat="server" ID="Email" CssClass="form-control" TabIndex="1" TextMode="Email" placeholder="Email" />
                                                     <asp:RequiredFieldValidator runat="server" ControlToValidate="Email"
                                                         CssClass="text-danger" ErrorMessage="The email field is required." />
                                                 </div>
                                                 <div class="form-group">
-                                                    <asp:TextBox runat="server" ID="Password" TextMode="Password" tabindex="2" CssClass="form-control" placeholder="Password" />
+                                                    <asp:TextBox runat="server" ID="Password" TextMode="Password" TabIndex="2" CssClass="form-control" placeholder="Password" />
                                                     <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="The password field is required." />
                                                 </div>
                                                 <div class="form-group text-center">
@@ -314,7 +317,7 @@
                                                 <div class="form-group">
                                                     <div class="row">
                                                         <div class="col-sm-6 col-sm-offset-3">
-                                                            <input type="submit" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+                                                            <asp:Button runat="server" Text="Log In" tabindex="4" CssClass="form-control btn btn-login" />
                                                         </div>
                                                     </div>
                                                 </div>
@@ -359,6 +362,7 @@
             </div>
         </div>
     </div>
+    </asp:UpdatePanel>
 
     <!-- //footer -->
     <!-- smooth scrolling -->
