@@ -24,31 +24,31 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">
             <div class="item active moving">
-                <img class="img-responsive" src="Content/Images/HomeSlider/01.jpg" alt="CasaRiva" style="width: 100%;">
+                <img class="img-responsive" src="Content/Images/CompressedHomeSlider/01.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
             <div class="item moving">
-                <img class="img-responsive" src="Content/Images/HomeSlider/02.jpg" alt="CasaRiva" style="width: 100%;">
+                <img class="img-responsive" src="Content/Images/CompressedHomeSlider/02.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
             <div class="item moving">
-                <img src="Content/Images/HomeSlider/03.jpg" alt="CasaRiva" style="width: 100%;">
+                <img src="Content/Images/CompressedHomeSlider/03.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
             <div class="item moving">
-                <img class="img-responsive" src="Content/Images/HomeSlider/04.jpg" alt="CasaRiva" style="width: 100%;">
+                <img class="img-responsive" src="Content/Images/CompressedHomeSlider/04.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
             <div class="item moving">
-                <img src="Content/Images/HomeSlider/05.jpg" alt="CasaRiva" style="width: 100%;">
+                <img src="Content/Images/CompressedHomeSlider/05.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
             <div class="item moving">
-                <img class="img-responsive" src="Content/Images/HomeSlider/06.jpg" alt="CasaRiva" style="width: 100%;">
+                <img class="img-responsive" src="Content/Images/CompressedHomeSlider/06.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
             <div class="item moving">
-                <img src="Content/Images/HomeSlider/07.jpg" alt="CasaRiva" style="width: 100%;">
+                <img src="Content/Images/CompressedHomeSlider/07.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
             <div class="item moving">
-                <img class="img-responsive" src="Content/Images/HomeSlider/08.jpg" alt="CasaRiva" style="width: 100%;">
+                <img class="img-responsive" src="Content/Images/CompressedHomeSlider/08.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
             <div class="item moving">
-                <img class="img-responsive" src="Content/Images/HomeSlider/09.jpg" alt="CasaRiva" style="width: 100%;">
+                <img class="img-responsive" src="Content/Images/CompressedHomeSlider/09.jpg" alt="CasaRiva" style="width: 100%;">
             </div>
 
         </div>

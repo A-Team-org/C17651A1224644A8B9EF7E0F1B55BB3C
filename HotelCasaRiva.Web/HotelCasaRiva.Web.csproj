@@ -205,6 +205,15 @@
     <Content Include="Content\Images\bag.png" />
     <Content Include="Content\Images\brand_name.png" />
     <Content Include="Content\Images\close_1.png" />
+    <Content Include="Content\Images\CompressedHomeSlider\01.jpg" />
+    <Content Include="Content\Images\CompressedHomeSlider\02.jpg" />
+    <Content Include="Content\Images\CompressedHomeSlider\03.jpg" />
+    <Content Include="Content\Images\CompressedHomeSlider\04.jpg" />
+    <Content Include="Content\Images\CompressedHomeSlider\05.jpg" />
+    <Content Include="Content\Images\CompressedHomeSlider\06.jpg" />
+    <Content Include="Content\Images\CompressedHomeSlider\07.jpg" />
+    <Content Include="Content\Images\CompressedHomeSlider\08.jpg" />
+    <Content Include="Content\Images\CompressedHomeSlider\09.jpg" />
     <Content Include="Content\Images\dining\dining_main.jpg" />
     <Content Include="Content\Images\drink.jpg" />
     <Content Include="Content\Images\fb.png" />
